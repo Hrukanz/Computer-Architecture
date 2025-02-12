@@ -1,0 +1,1102 @@
+
+poisson:     file format elf64-littleaarch64
+
+
+Disassembly of section .init:
+
+0000000000000980 <_init>:
+ 980:	d503201f 	nop
+ 984:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+ 988:	910003fd 	mov	x29, sp
+ 98c:	94000082 	bl	b94 <call_weak_fn>
+ 990:	a8c17bfd 	ldp	x29, x30, [sp], #16
+ 994:	d65f03c0 	ret
+
+Disassembly of section .plt:
+
+00000000000009a0 <.plt>:
+ 9a0:	a9bf7bf0 	stp	x16, x30, [sp, #-16]!
+ 9a4:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ 9a8:	f9478e11 	ldr	x17, [x16, #3864]
+ 9ac:	913c6210 	add	x16, x16, #0xf18
+ 9b0:	d61f0220 	br	x17
+ 9b4:	d503201f 	nop
+ 9b8:	d503201f 	nop
+ 9bc:	d503201f 	nop
+
+00000000000009c0 <exit@plt>:
+ 9c0:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ 9c4:	f9479211 	ldr	x17, [x16, #3872]
+ 9c8:	913c8210 	add	x16, x16, #0xf20
+ 9cc:	d61f0220 	br	x17
+
+00000000000009d0 <__libc_start_main@plt>:
+ 9d0:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ 9d4:	f9479611 	ldr	x17, [x16, #3880]
+ 9d8:	913ca210 	add	x16, x16, #0xf28
+ 9dc:	d61f0220 	br	x17
+
+00000000000009e0 <__cxa_finalize@plt>:
+ 9e0:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ 9e4:	f9479a11 	ldr	x17, [x16, #3888]
+ 9e8:	913cc210 	add	x16, x16, #0xf30
+ 9ec:	d61f0220 	br	x17
+
+00000000000009f0 <__cxa_atexit@plt>:
+ 9f0:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ 9f4:	f9479e11 	ldr	x17, [x16, #3896]
+ 9f8:	913ce210 	add	x16, x16, #0xf38
+ 9fc:	d61f0220 	br	x17
+
+0000000000000a00 <atoi@plt>:
+ a00:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a04:	f947a211 	ldr	x17, [x16, #3904]
+ a08:	913d0210 	add	x16, x16, #0xf40
+ a0c:	d61f0220 	br	x17
+
+0000000000000a10 <getopt@plt>:
+ a10:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a14:	f947a611 	ldr	x17, [x16, #3912]
+ a18:	913d2210 	add	x16, x16, #0xf48
+ a1c:	d61f0220 	br	x17
+
+0000000000000a20 <atof@plt>:
+ a20:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a24:	f947aa11 	ldr	x17, [x16, #3920]
+ a28:	913d4210 	add	x16, x16, #0xf50
+ a2c:	d61f0220 	br	x17
+
+0000000000000a30 <calloc@plt>:
+ a30:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a34:	f947ae11 	ldr	x17, [x16, #3928]
+ a38:	913d6210 	add	x16, x16, #0xf58
+ a3c:	d61f0220 	br	x17
+
+0000000000000a40 <__stack_chk_fail@plt>:
+ a40:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a44:	f947b211 	ldr	x17, [x16, #3936]
+ a48:	913d8210 	add	x16, x16, #0xf60
+ a4c:	d61f0220 	br	x17
+
+0000000000000a50 <abort@plt>:
+ a50:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a54:	f947b611 	ldr	x17, [x16, #3944]
+ a58:	913da210 	add	x16, x16, #0xf68
+ a5c:	d61f0220 	br	x17
+
+0000000000000a60 <puts@plt>:
+ a60:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a64:	f947ba11 	ldr	x17, [x16, #3952]
+ a68:	913dc210 	add	x16, x16, #0xf70
+ a6c:	d61f0220 	br	x17
+
+0000000000000a70 <free@plt>:
+ a70:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a74:	f947be11 	ldr	x17, [x16, #3960]
+ a78:	913de210 	add	x16, x16, #0xf78
+ a7c:	d61f0220 	br	x17
+
+0000000000000a80 <fwrite@plt>:
+ a80:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a84:	f947c211 	ldr	x17, [x16, #3968]
+ a88:	913e0210 	add	x16, x16, #0xf80
+ a8c:	d61f0220 	br	x17
+
+0000000000000a90 <printf@plt>:
+ a90:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ a94:	f947c611 	ldr	x17, [x16, #3976]
+ a98:	913e2210 	add	x16, x16, #0xf88
+ a9c:	d61f0220 	br	x17
+
+0000000000000aa0 <putchar@plt>:
+ aa0:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ aa4:	f947ca11 	ldr	x17, [x16, #3984]
+ aa8:	913e4210 	add	x16, x16, #0xf90
+ aac:	d61f0220 	br	x17
+
+0000000000000ab0 <fprintf@plt>:
+ ab0:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ ab4:	f947ce11 	ldr	x17, [x16, #3992]
+ ab8:	913e6210 	add	x16, x16, #0xf98
+ abc:	d61f0220 	br	x17
+
+0000000000000ac0 <__monstartup@plt>:
+ ac0:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ ac4:	f947d211 	ldr	x17, [x16, #4000]
+ ac8:	913e8210 	add	x16, x16, #0xfa0
+ acc:	d61f0220 	br	x17
+
+0000000000000ad0 <_mcount@plt>:
+ ad0:	b0000090 	adrp	x16, 11000 <__FRAME_END__+0xf590>
+ ad4:	f947d611 	ldr	x17, [x16, #4008]
+ ad8:	913ea210 	add	x16, x16, #0xfa8
+ adc:	d61f0220 	br	x17
+
+Disassembly of section .text:
+
+0000000000000b00 <_start>:
+     b00:	d503201f 	nop
+     b04:	d280001d 	mov	x29, #0x0                   	// #0
+     b08:	d280001e 	mov	x30, #0x0                   	// #0
+     b0c:	aa0003e5 	mov	x5, x0
+     b10:	f94003e1 	ldr	x1, [sp]
+     b14:	910023e2 	add	x2, sp, #0x8
+     b18:	910003e6 	mov	x6, sp
+     b1c:	b0000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+     b20:	f947f000 	ldr	x0, [x0, #4064]
+     b24:	d2800003 	mov	x3, #0x0                   	// #0
+     b28:	d2800004 	mov	x4, #0x0                   	// #0
+     b2c:	97ffffa9 	bl	9d0 <__libc_start_main@plt>
+     b30:	97ffffc8 	bl	a50 <abort@plt>
+     b34:	d503201f 	nop
+     b38:	d503201f 	nop
+     b3c:	d503201f 	nop
+
+0000000000000b40 <__gmon_start__>:
+     b40:	d0000082 	adrp	x2, 12000 <__data_start>
+     b44:	b9401040 	ldr	w0, [x2, #16]
+     b48:	34000040 	cbz	w0, b50 <__gmon_start__+0x10>
+     b4c:	d65f03c0 	ret
+     b50:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+     b54:	b0000081 	adrp	x1, 11000 <__FRAME_END__+0xf590>
+     b58:	52800023 	mov	w3, #0x1                   	// #1
+     b5c:	910003fd 	mov	x29, sp
+     b60:	f947f421 	ldr	x1, [x1, #4072]
+     b64:	b9001043 	str	w3, [x2, #16]
+     b68:	90000000 	adrp	x0, 0 <__executable_start>
+     b6c:	91000000 	add	x0, x0, #0x0
+     b70:	97ffffd4 	bl	ac0 <__monstartup@plt>
+     b74:	a8c17bfd 	ldp	x29, x30, [sp], #16
+     b78:	b0000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+     b7c:	f947fc00 	ldr	x0, [x0, #4088]
+     b80:	140002ac 	b	1630 <atexit>
+     b84:	d503201f 	nop
+     b88:	d503201f 	nop
+     b8c:	d503201f 	nop
+
+0000000000000b90 <_dl_relocate_static_pie>:
+     b90:	d65f03c0 	ret
+
+0000000000000b94 <call_weak_fn>:
+     b94:	b0000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+     b98:	f947ec00 	ldr	x0, [x0, #4056]
+     b9c:	b4000040 	cbz	x0, ba4 <call_weak_fn+0x10>
+     ba0:	17ffffe8 	b	b40 <__gmon_start__>
+     ba4:	d65f03c0 	ret
+     ba8:	d503201f 	nop
+     bac:	d503201f 	nop
+
+0000000000000bb0 <deregister_tm_clones>:
+     bb0:	d0000080 	adrp	x0, 12000 <__data_start>
+     bb4:	91004000 	add	x0, x0, #0x10
+     bb8:	d0000081 	adrp	x1, 12000 <__data_start>
+     bbc:	91004021 	add	x1, x1, #0x10
+     bc0:	eb00003f 	cmp	x1, x0
+     bc4:	540000c0 	b.eq	bdc <deregister_tm_clones+0x2c>  // b.none
+     bc8:	b0000081 	adrp	x1, 11000 <__FRAME_END__+0xf590>
+     bcc:	f947dc21 	ldr	x1, [x1, #4024]
+     bd0:	b4000061 	cbz	x1, bdc <deregister_tm_clones+0x2c>
+     bd4:	aa0103f0 	mov	x16, x1
+     bd8:	d61f0200 	br	x16
+     bdc:	d65f03c0 	ret
+
+0000000000000be0 <register_tm_clones>:
+     be0:	d0000080 	adrp	x0, 12000 <__data_start>
+     be4:	91004000 	add	x0, x0, #0x10
+     be8:	d0000081 	adrp	x1, 12000 <__data_start>
+     bec:	91004021 	add	x1, x1, #0x10
+     bf0:	cb000021 	sub	x1, x1, x0
+     bf4:	d37ffc22 	lsr	x2, x1, #63
+     bf8:	8b810c41 	add	x1, x2, x1, asr #3
+     bfc:	9341fc21 	asr	x1, x1, #1
+     c00:	b40000c1 	cbz	x1, c18 <register_tm_clones+0x38>
+     c04:	b0000082 	adrp	x2, 11000 <__FRAME_END__+0xf590>
+     c08:	f947f842 	ldr	x2, [x2, #4080]
+     c0c:	b4000062 	cbz	x2, c18 <register_tm_clones+0x38>
+     c10:	aa0203f0 	mov	x16, x2
+     c14:	d61f0200 	br	x16
+     c18:	d65f03c0 	ret
+     c1c:	d503201f 	nop
+
+0000000000000c20 <__do_global_dtors_aux>:
+     c20:	a9be7bfd 	stp	x29, x30, [sp, #-32]!
+     c24:	910003fd 	mov	x29, sp
+     c28:	f9000bf3 	str	x19, [sp, #16]
+     c2c:	d0000093 	adrp	x19, 12000 <__data_start>
+     c30:	39405260 	ldrb	w0, [x19, #20]
+     c34:	35000140 	cbnz	w0, c5c <__do_global_dtors_aux+0x3c>
+     c38:	b0000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+     c3c:	f947e000 	ldr	x0, [x0, #4032]
+     c40:	b4000080 	cbz	x0, c50 <__do_global_dtors_aux+0x30>
+     c44:	d0000080 	adrp	x0, 12000 <__data_start>
+     c48:	f9400400 	ldr	x0, [x0, #8]
+     c4c:	97ffff65 	bl	9e0 <__cxa_finalize@plt>
+     c50:	97ffffd8 	bl	bb0 <deregister_tm_clones>
+     c54:	52800020 	mov	w0, #0x1                   	// #1
+     c58:	39005260 	strb	w0, [x19, #20]
+     c5c:	f9400bf3 	ldr	x19, [sp, #16]
+     c60:	a8c27bfd 	ldp	x29, x30, [sp], #32
+     c64:	d65f03c0 	ret
+     c68:	d503201f 	nop
+     c6c:	d503201f 	nop
+
+0000000000000c70 <frame_dummy>:
+     c70:	17ffffdc 	b	be0 <register_tm_clones>
+
+0000000000000c74 <poisson_mixed>:
+ * @param threads       Number of threads to use for solving.
+ * @param delta         Grid spacing.
+ * @return double*      Solution to Poissons equation.  Caller must free.
+ */
+double* poisson_mixed (int n, double *source, int iterations, int threads, float delta)
+{
+     c74:	a9ba7bfd 	stp	x29, x30, [sp, #-96]!
+     c78:	910003fd 	mov	x29, sp
+     c7c:	aa1e03e4 	mov	x4, x30
+     c80:	b9002fe0 	str	w0, [sp, #44]
+     c84:	f90013e1 	str	x1, [sp, #32]
+     c88:	b9002be2 	str	w2, [sp, #40]
+     c8c:	b9001fe3 	str	w3, [sp, #28]
+     c90:	bd001be0 	str	s0, [sp, #24]
+     c94:	aa0403fe 	mov	x30, x4
+     c98:	d50320ff 	xpaclri
+     c9c:	aa1e03e0 	mov	x0, x30
+     ca0:	97ffff8c 	bl	ad0 <_mcount@plt>
+    if (debug)
+     ca4:	d0000080 	adrp	x0, 12000 <__data_start>
+     ca8:	91005400 	add	x0, x0, #0x15
+     cac:	39400000 	ldrb	w0, [x0]
+     cb0:	7100001f 	cmp	w0, #0x0
+     cb4:	54000120 	b.eq	cd8 <poisson_mixed+0x64>  // b.none
+    {
+        printf ("Starting solver with:\n"
+     cb8:	bd401be0 	ldr	s0, [sp, #24]
+     cbc:	1e22c000 	fcvt	d0, s0
+     cc0:	b9401fe3 	ldr	w3, [sp, #28]
+     cc4:	b9402be2 	ldr	w2, [sp, #40]
+     cc8:	b9402fe1 	ldr	w1, [sp, #44]
+     ccc:	b0000000 	adrp	x0, 1000 <poisson_mixed+0x38c>
+     cd0:	9119a000 	add	x0, x0, #0x668
+     cd4:	97ffff6f 	bl	a90 <printf@plt>
+               "delta = %f\n",
+               n, iterations, threads, delta);
+    }
+
+    // Allocate some buffers to calculate the solution in
+    double *curr = (double*)calloc (n * n * n, sizeof (double));
+     cd8:	b9402fe0 	ldr	w0, [sp, #44]
+     cdc:	1b007c01 	mul	w1, w0, w0
+     ce0:	b9402fe0 	ldr	w0, [sp, #44]
+     ce4:	1b007c20 	mul	w0, w1, w0
+     ce8:	93407c00 	sxtw	x0, w0
+     cec:	d2800101 	mov	x1, #0x8                   	// #8
+     cf0:	97ffff50 	bl	a30 <calloc@plt>
+     cf4:	f90027e0 	str	x0, [sp, #72]
+    double *next = (double*)calloc (n * n * n, sizeof (double));
+     cf8:	b9402fe0 	ldr	w0, [sp, #44]
+     cfc:	1b007c01 	mul	w1, w0, w0
+     d00:	b9402fe0 	ldr	w0, [sp, #44]
+     d04:	1b007c20 	mul	w0, w1, w0
+     d08:	93407c00 	sxtw	x0, w0
+     d0c:	d2800101 	mov	x1, #0x8                   	// #8
+     d10:	97ffff48 	bl	a30 <calloc@plt>
+     d14:	f9002be0 	str	x0, [sp, #80]
+
+    // Ensure we haven't run out of memory
+    if (curr == NULL || next == NULL)
+     d18:	f94027e0 	ldr	x0, [sp, #72]
+     d1c:	f100001f 	cmp	x0, #0x0
+     d20:	54000080 	b.eq	d30 <poisson_mixed+0xbc>  // b.none
+     d24:	f9402be0 	ldr	x0, [sp, #80]
+     d28:	f100001f 	cmp	x0, #0x0
+     d2c:	54000161 	b.ne	d58 <poisson_mixed+0xe4>  // b.any
+    {
+        fprintf (stderr, "Error: ran out of memory when trying to allocate %i sized cube\n", n);
+     d30:	b0000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+     d34:	f947e400 	ldr	x0, [x0, #4040]
+     d38:	f9400003 	ldr	x3, [x0]
+     d3c:	b9402fe2 	ldr	w2, [sp, #44]
+     d40:	b0000000 	adrp	x0, 1000 <poisson_mixed+0x38c>
+     d44:	911ac001 	add	x1, x0, #0x6b0
+     d48:	aa0303e0 	mov	x0, x3
+     d4c:	97ffff59 	bl	ab0 <fprintf@plt>
+        exit (EXIT_FAILURE);
+     d50:	52800020 	mov	w0, #0x1                   	// #1
+     d54:	97ffff1b 	bl	9c0 <exit@plt>
+    }
+
+    // Perform the iterations to solve Poisson's equation
+    for (int iter = 0; iter < iterations; ++iter)
+     d58:	b90037ff 	str	wzr, [sp, #52]
+     d5c:	14000103 	b	1168 <poisson_mixed+0x4f4>
+    {
+        // Iterate over each layer of the cube
+        for (int k = 0; k < n; ++k)
+     d60:	b9003bff 	str	wzr, [sp, #56]
+     d64:	140000f4 	b	1134 <poisson_mixed+0x4c0>
+        {
+            // Iterate over each row of the current layer
+            for (int j = 0; j < n; ++j)
+     d68:	b9003fff 	str	wzr, [sp, #60]
+     d6c:	140000eb 	b	1118 <poisson_mixed+0x4a4>
+            {
+                // Iterate over each element of the current row
+                for (int i = 0; i < n; ++i)
+     d70:	b90043ff 	str	wzr, [sp, #64]
+     d74:	140000e2 	b	10fc <poisson_mixed+0x488>
+                {
+                    // Calculate the 1D index for the current element
+                    int idx = (k * n + j) * n + i;
+     d78:	b9403be1 	ldr	w1, [sp, #56]
+     d7c:	b9402fe0 	ldr	w0, [sp, #44]
+     d80:	1b007c21 	mul	w1, w1, w0
+     d84:	b9403fe0 	ldr	w0, [sp, #60]
+     d88:	0b000021 	add	w1, w1, w0
+     d8c:	b9402fe0 	ldr	w0, [sp, #44]
+     d90:	1b007c20 	mul	w0, w1, w0
+     d94:	b94043e1 	ldr	w1, [sp, #64]
+     d98:	0b000020 	add	w0, w1, w0
+     d9c:	b90047e0 	str	w0, [sp, #68]
+                    
+                    // Check if the current element is on the boundary
+                    if (i == 0 || i == n-1 || j == 0 || j == n-1 || k == 0 || k == n-1)
+     da0:	b94043e0 	ldr	w0, [sp, #64]
+     da4:	7100001f 	cmp	w0, #0x0
+     da8:	540002c0 	b.eq	e00 <poisson_mixed+0x18c>  // b.none
+     dac:	b9402fe0 	ldr	w0, [sp, #44]
+     db0:	51000400 	sub	w0, w0, #0x1
+     db4:	b94043e1 	ldr	w1, [sp, #64]
+     db8:	6b00003f 	cmp	w1, w0
+     dbc:	54000220 	b.eq	e00 <poisson_mixed+0x18c>  // b.none
+     dc0:	b9403fe0 	ldr	w0, [sp, #60]
+     dc4:	7100001f 	cmp	w0, #0x0
+     dc8:	540001c0 	b.eq	e00 <poisson_mixed+0x18c>  // b.none
+     dcc:	b9402fe0 	ldr	w0, [sp, #44]
+     dd0:	51000400 	sub	w0, w0, #0x1
+     dd4:	b9403fe1 	ldr	w1, [sp, #60]
+     dd8:	6b00003f 	cmp	w1, w0
+     ddc:	54000120 	b.eq	e00 <poisson_mixed+0x18c>  // b.none
+     de0:	b9403be0 	ldr	w0, [sp, #56]
+     de4:	7100001f 	cmp	w0, #0x0
+     de8:	540000c0 	b.eq	e00 <poisson_mixed+0x18c>  // b.none
+     dec:	b9402fe0 	ldr	w0, [sp, #44]
+     df0:	51000400 	sub	w0, w0, #0x1
+     df4:	b9403be1 	ldr	w1, [sp, #56]
+     df8:	6b00003f 	cmp	w1, w0
+     dfc:	54000ee1 	b.ne	fd8 <poisson_mixed+0x364>  // b.any
+                    {
+                        // Apply Dirichlet boundary condition on top and bottom
+                        if (k == 0)
+     e00:	b9403be0 	ldr	w0, [sp, #56]
+     e04:	7100001f 	cmp	w0, #0x0
+     e08:	54000101 	b.ne	e28 <poisson_mixed+0x1b4>  // b.any
+                        {
+                            next[idx] = -1.0;  // Bottom boundary
+     e0c:	b98047e0 	ldrsw	x0, [sp, #68]
+     e10:	d37df000 	lsl	x0, x0, #3
+     e14:	f9402be1 	ldr	x1, [sp, #80]
+     e18:	8b000020 	add	x0, x1, x0
+     e1c:	1e7e1000 	fmov	d0, #-1.000000000000000000e+00
+     e20:	fd000000 	str	d0, [x0]
+                        if (k == 0)
+     e24:	140000b2 	b	10ec <poisson_mixed+0x478>
+                        }
+                        else if (k == n-1)
+     e28:	b9402fe0 	ldr	w0, [sp, #44]
+     e2c:	51000400 	sub	w0, w0, #0x1
+     e30:	b9403be1 	ldr	w1, [sp, #56]
+     e34:	6b00003f 	cmp	w1, w0
+     e38:	54000101 	b.ne	e58 <poisson_mixed+0x1e4>  // b.any
+                        {
+                            next[idx] = 1.0;   // Top boundary
+     e3c:	b98047e0 	ldrsw	x0, [sp, #68]
+     e40:	d37df000 	lsl	x0, x0, #3
+     e44:	f9402be1 	ldr	x1, [sp, #80]
+     e48:	8b000020 	add	x0, x1, x0
+     e4c:	1e6e1000 	fmov	d0, #1.000000000000000000e+00
+     e50:	fd000000 	str	d0, [x0]
+                        if (k == 0)
+     e54:	140000a6 	b	10ec <poisson_mixed+0x478>
+                        }
+                        else
+                        {
+                            // Apply Neumann boundary condition on the sides
+                            if (i == 0)
+     e58:	b94043e0 	ldr	w0, [sp, #64]
+     e5c:	7100001f 	cmp	w0, #0x0
+     e60:	54000281 	b.ne	eb0 <poisson_mixed+0x23c>  // b.any
+                                next[idx] = curr[(k * n + j) * n + 1];  // Left side: V_(-1,j,k) = V_(1,j,k)
+     e64:	b9403be1 	ldr	w1, [sp, #56]
+     e68:	b9402fe0 	ldr	w0, [sp, #44]
+     e6c:	1b007c21 	mul	w1, w1, w0
+     e70:	b9403fe0 	ldr	w0, [sp, #60]
+     e74:	0b000021 	add	w1, w1, w0
+     e78:	b9402fe0 	ldr	w0, [sp, #44]
+     e7c:	1b007c20 	mul	w0, w1, w0
+     e80:	93407c00 	sxtw	x0, w0
+     e84:	91000400 	add	x0, x0, #0x1
+     e88:	d37df000 	lsl	x0, x0, #3
+     e8c:	f94027e1 	ldr	x1, [sp, #72]
+     e90:	8b000021 	add	x1, x1, x0
+     e94:	b98047e0 	ldrsw	x0, [sp, #68]
+     e98:	d37df000 	lsl	x0, x0, #3
+     e9c:	f9402be2 	ldr	x2, [sp, #80]
+     ea0:	8b000040 	add	x0, x2, x0
+     ea4:	fd400020 	ldr	d0, [x1]
+     ea8:	fd000000 	str	d0, [x0]
+                        if (k == 0)
+     eac:	14000090 	b	10ec <poisson_mixed+0x478>
+                            else if (i == n-1)
+     eb0:	b9402fe0 	ldr	w0, [sp, #44]
+     eb4:	51000400 	sub	w0, w0, #0x1
+     eb8:	b94043e1 	ldr	w1, [sp, #64]
+     ebc:	6b00003f 	cmp	w1, w0
+     ec0:	540002c1 	b.ne	f18 <poisson_mixed+0x2a4>  // b.any
+                                next[idx] = curr[(k * n + j) * n + n-2]; // Right side: V_(N,j,k) = V_(N-2,j,k)
+     ec4:	b9403be1 	ldr	w1, [sp, #56]
+     ec8:	b9402fe0 	ldr	w0, [sp, #44]
+     ecc:	1b007c21 	mul	w1, w1, w0
+     ed0:	b9403fe0 	ldr	w0, [sp, #60]
+     ed4:	0b000021 	add	w1, w1, w0
+     ed8:	b9402fe0 	ldr	w0, [sp, #44]
+     edc:	1b007c21 	mul	w1, w1, w0
+     ee0:	b9402fe0 	ldr	w0, [sp, #44]
+     ee4:	0b000020 	add	w0, w1, w0
+     ee8:	93407c00 	sxtw	x0, w0
+     eec:	d37df000 	lsl	x0, x0, #3
+     ef0:	d1004000 	sub	x0, x0, #0x10
+     ef4:	f94027e1 	ldr	x1, [sp, #72]
+     ef8:	8b000021 	add	x1, x1, x0
+     efc:	b98047e0 	ldrsw	x0, [sp, #68]
+     f00:	d37df000 	lsl	x0, x0, #3
+     f04:	f9402be2 	ldr	x2, [sp, #80]
+     f08:	8b000040 	add	x0, x2, x0
+     f0c:	fd400020 	ldr	d0, [x1]
+     f10:	fd000000 	str	d0, [x0]
+                        if (k == 0)
+     f14:	14000076 	b	10ec <poisson_mixed+0x478>
+                            else if (j == 0)
+     f18:	b9403fe0 	ldr	w0, [sp, #60]
+     f1c:	7100001f 	cmp	w0, #0x0
+     f20:	54000281 	b.ne	f70 <poisson_mixed+0x2fc>  // b.any
+                                next[idx] = curr[(k * n + 1) * n + i];  // Front side: V_(i,-1,k) = V_(i,1,k)
+     f24:	b9403be1 	ldr	w1, [sp, #56]
+     f28:	b9402fe0 	ldr	w0, [sp, #44]
+     f2c:	1b007c20 	mul	w0, w1, w0
+     f30:	11000401 	add	w1, w0, #0x1
+     f34:	b9402fe0 	ldr	w0, [sp, #44]
+     f38:	1b007c21 	mul	w1, w1, w0
+     f3c:	b94043e0 	ldr	w0, [sp, #64]
+     f40:	0b000020 	add	w0, w1, w0
+     f44:	93407c00 	sxtw	x0, w0
+     f48:	d37df000 	lsl	x0, x0, #3
+     f4c:	f94027e1 	ldr	x1, [sp, #72]
+     f50:	8b000021 	add	x1, x1, x0
+     f54:	b98047e0 	ldrsw	x0, [sp, #68]
+     f58:	d37df000 	lsl	x0, x0, #3
+     f5c:	f9402be2 	ldr	x2, [sp, #80]
+     f60:	8b000040 	add	x0, x2, x0
+     f64:	fd400020 	ldr	d0, [x1]
+     f68:	fd000000 	str	d0, [x0]
+                        if (k == 0)
+     f6c:	14000060 	b	10ec <poisson_mixed+0x478>
+                            else if (j == n-1)
+     f70:	b9402fe0 	ldr	w0, [sp, #44]
+     f74:	51000400 	sub	w0, w0, #0x1
+     f78:	b9403fe1 	ldr	w1, [sp, #60]
+     f7c:	6b00003f 	cmp	w1, w0
+     f80:	54000b61 	b.ne	10ec <poisson_mixed+0x478>  // b.any
+                                next[idx] = curr[(k * n + n-2) * n + i]; // Back side: V_(i,N,k) = V_(i,N-2,k)
+     f84:	b9403be1 	ldr	w1, [sp, #56]
+     f88:	b9402fe0 	ldr	w0, [sp, #44]
+     f8c:	1b007c21 	mul	w1, w1, w0
+     f90:	b9402fe0 	ldr	w0, [sp, #44]
+     f94:	0b000020 	add	w0, w1, w0
+     f98:	51000801 	sub	w1, w0, #0x2
+     f9c:	b9402fe0 	ldr	w0, [sp, #44]
+     fa0:	1b007c21 	mul	w1, w1, w0
+     fa4:	b94043e0 	ldr	w0, [sp, #64]
+     fa8:	0b000020 	add	w0, w1, w0
+     fac:	93407c00 	sxtw	x0, w0
+     fb0:	d37df000 	lsl	x0, x0, #3
+     fb4:	f94027e1 	ldr	x1, [sp, #72]
+     fb8:	8b000021 	add	x1, x1, x0
+     fbc:	b98047e0 	ldrsw	x0, [sp, #68]
+     fc0:	d37df000 	lsl	x0, x0, #3
+     fc4:	f9402be2 	ldr	x2, [sp, #80]
+     fc8:	8b000040 	add	x0, x2, x0
+     fcc:	fd400020 	ldr	d0, [x1]
+     fd0:	fd000000 	str	d0, [x0]
+                        if (k == 0)
+     fd4:	14000046 	b	10ec <poisson_mixed+0x478>
+                        }
+                    }
+                    else
+                    {
+                        // Update the current element using the average of its neighbors
+                        next[idx] = (curr[idx - 1] + curr[idx + 1] +
+     fd8:	b98047e0 	ldrsw	x0, [sp, #68]
+     fdc:	d37df000 	lsl	x0, x0, #3
+     fe0:	d1002000 	sub	x0, x0, #0x8
+     fe4:	f94027e1 	ldr	x1, [sp, #72]
+     fe8:	8b000020 	add	x0, x1, x0
+     fec:	fd400001 	ldr	d1, [x0]
+     ff0:	b98047e0 	ldrsw	x0, [sp, #68]
+     ff4:	91000400 	add	x0, x0, #0x1
+     ff8:	d37df000 	lsl	x0, x0, #3
+     ffc:	f94027e1 	ldr	x1, [sp, #72]
+    1000:	8b000020 	add	x0, x1, x0
+    1004:	fd400000 	ldr	d0, [x0]
+    1008:	1e602821 	fadd	d1, d1, d0
+                                     curr[idx - n] + curr[idx + n] +
+    100c:	b94047e1 	ldr	w1, [sp, #68]
+    1010:	b9402fe0 	ldr	w0, [sp, #44]
+    1014:	4b000020 	sub	w0, w1, w0
+    1018:	93407c00 	sxtw	x0, w0
+    101c:	d37df000 	lsl	x0, x0, #3
+    1020:	f94027e1 	ldr	x1, [sp, #72]
+    1024:	8b000020 	add	x0, x1, x0
+    1028:	fd400000 	ldr	d0, [x0]
+                        next[idx] = (curr[idx - 1] + curr[idx + 1] +
+    102c:	1e602821 	fadd	d1, d1, d0
+                                     curr[idx - n] + curr[idx + n] +
+    1030:	b94047e1 	ldr	w1, [sp, #68]
+    1034:	b9402fe0 	ldr	w0, [sp, #44]
+    1038:	0b000020 	add	w0, w1, w0
+    103c:	93407c00 	sxtw	x0, w0
+    1040:	d37df000 	lsl	x0, x0, #3
+    1044:	f94027e1 	ldr	x1, [sp, #72]
+    1048:	8b000020 	add	x0, x1, x0
+    104c:	fd400000 	ldr	d0, [x0]
+    1050:	1e602821 	fadd	d1, d1, d0
+                                     curr[idx - n * n] + curr[idx + n * n] -
+    1054:	b9402fe0 	ldr	w0, [sp, #44]
+    1058:	1b007c00 	mul	w0, w0, w0
+    105c:	b94047e1 	ldr	w1, [sp, #68]
+    1060:	4b000020 	sub	w0, w1, w0
+    1064:	93407c00 	sxtw	x0, w0
+    1068:	d37df000 	lsl	x0, x0, #3
+    106c:	f94027e1 	ldr	x1, [sp, #72]
+    1070:	8b000020 	add	x0, x1, x0
+    1074:	fd400000 	ldr	d0, [x0]
+                                     curr[idx - n] + curr[idx + n] +
+    1078:	1e602821 	fadd	d1, d1, d0
+                                     curr[idx - n * n] + curr[idx + n * n] -
+    107c:	b9402fe0 	ldr	w0, [sp, #44]
+    1080:	1b007c01 	mul	w1, w0, w0
+    1084:	b94047e0 	ldr	w0, [sp, #68]
+    1088:	0b000020 	add	w0, w1, w0
+    108c:	93407c00 	sxtw	x0, w0
+    1090:	d37df000 	lsl	x0, x0, #3
+    1094:	f94027e1 	ldr	x1, [sp, #72]
+    1098:	8b000020 	add	x0, x1, x0
+    109c:	fd400000 	ldr	d0, [x0]
+    10a0:	1e602821 	fadd	d1, d1, d0
+                                     delta * delta * source[idx]) / 6.0;
+    10a4:	bd401be0 	ldr	s0, [sp, #24]
+    10a8:	1e200800 	fmul	s0, s0, s0
+    10ac:	1e22c002 	fcvt	d2, s0
+    10b0:	b98047e0 	ldrsw	x0, [sp, #68]
+    10b4:	d37df000 	lsl	x0, x0, #3
+    10b8:	f94013e1 	ldr	x1, [sp, #32]
+    10bc:	8b000020 	add	x0, x1, x0
+    10c0:	fd400000 	ldr	d0, [x0]
+    10c4:	1e600840 	fmul	d0, d2, d0
+                                     curr[idx - n * n] + curr[idx + n * n] -
+    10c8:	1e603821 	fsub	d1, d1, d0
+                        next[idx] = (curr[idx - 1] + curr[idx + 1] +
+    10cc:	b98047e0 	ldrsw	x0, [sp, #68]
+    10d0:	d37df000 	lsl	x0, x0, #3
+    10d4:	f9402be1 	ldr	x1, [sp, #80]
+    10d8:	8b000020 	add	x0, x1, x0
+                                     delta * delta * source[idx]) / 6.0;
+    10dc:	1e631000 	fmov	d0, #6.000000000000000000e+00
+    10e0:	1e601820 	fdiv	d0, d1, d0
+                        next[idx] = (curr[idx - 1] + curr[idx + 1] +
+    10e4:	fd000000 	str	d0, [x0]
+    10e8:	14000002 	b	10f0 <poisson_mixed+0x47c>
+                        if (k == 0)
+    10ec:	d503201f 	nop
+                for (int i = 0; i < n; ++i)
+    10f0:	b94043e0 	ldr	w0, [sp, #64]
+    10f4:	11000400 	add	w0, w0, #0x1
+    10f8:	b90043e0 	str	w0, [sp, #64]
+    10fc:	b94043e1 	ldr	w1, [sp, #64]
+    1100:	b9402fe0 	ldr	w0, [sp, #44]
+    1104:	6b00003f 	cmp	w1, w0
+    1108:	54ffe38b 	b.lt	d78 <poisson_mixed+0x104>  // b.tstop
+            for (int j = 0; j < n; ++j)
+    110c:	b9403fe0 	ldr	w0, [sp, #60]
+    1110:	11000400 	add	w0, w0, #0x1
+    1114:	b9003fe0 	str	w0, [sp, #60]
+    1118:	b9403fe1 	ldr	w1, [sp, #60]
+    111c:	b9402fe0 	ldr	w0, [sp, #44]
+    1120:	6b00003f 	cmp	w1, w0
+    1124:	54ffe26b 	b.lt	d70 <poisson_mixed+0xfc>  // b.tstop
+        for (int k = 0; k < n; ++k)
+    1128:	b9403be0 	ldr	w0, [sp, #56]
+    112c:	11000400 	add	w0, w0, #0x1
+    1130:	b9003be0 	str	w0, [sp, #56]
+    1134:	b9403be1 	ldr	w1, [sp, #56]
+    1138:	b9402fe0 	ldr	w0, [sp, #44]
+    113c:	6b00003f 	cmp	w1, w0
+    1140:	54ffe14b 	b.lt	d68 <poisson_mixed+0xf4>  // b.tstop
+                }
+            }
+        }
+
+        // Swap the buffers for the next iteration
+        double *temp = curr;
+    1144:	f94027e0 	ldr	x0, [sp, #72]
+    1148:	f9002fe0 	str	x0, [sp, #88]
+        curr = next;
+    114c:	f9402be0 	ldr	x0, [sp, #80]
+    1150:	f90027e0 	str	x0, [sp, #72]
+        next = temp;
+    1154:	f9402fe0 	ldr	x0, [sp, #88]
+    1158:	f9002be0 	str	x0, [sp, #80]
+    for (int iter = 0; iter < iterations; ++iter)
+    115c:	b94037e0 	ldr	w0, [sp, #52]
+    1160:	11000400 	add	w0, w0, #0x1
+    1164:	b90037e0 	str	w0, [sp, #52]
+    1168:	b94037e1 	ldr	w1, [sp, #52]
+    116c:	b9402be0 	ldr	w0, [sp, #40]
+    1170:	6b00003f 	cmp	w1, w0
+    1174:	54ffdf6b 	b.lt	d60 <poisson_mixed+0xec>  // b.tstop
+    }
+
+    // Free one of the buffers and return the correct answer in the other.
+    free (next);
+    1178:	f9402be0 	ldr	x0, [sp, #80]
+    117c:	97fffe3d 	bl	a70 <free@plt>
+
+    if (debug)
+    1180:	b0000080 	adrp	x0, 12000 <__data_start>
+    1184:	91005400 	add	x0, x0, #0x15
+    1188:	39400000 	ldrb	w0, [x0]
+    118c:	7100001f 	cmp	w0, #0x0
+    1190:	54000080 	b.eq	11a0 <poisson_mixed+0x52c>  // b.none
+    {
+        printf ("Finished solving.\n");
+    1194:	90000000 	adrp	x0, 1000 <poisson_mixed+0x38c>
+    1198:	911bc000 	add	x0, x0, #0x6f0
+    119c:	97fffe31 	bl	a60 <puts@plt>
+    }
+
+    return curr;
+    11a0:	f94027e0 	ldr	x0, [sp, #72]
+}
+    11a4:	a8c67bfd 	ldp	x29, x30, [sp], #96
+    11a8:	d65f03c0 	ret
+
+00000000000011ac <main>:
+
+
+
+int main (int argc, char **argv)
+{
+    11ac:	a9ba7bfd 	stp	x29, x30, [sp, #-96]!
+    11b0:	910003fd 	mov	x29, sp
+    11b4:	aa1e03e2 	mov	x2, x30
+    11b8:	b9001fe0 	str	w0, [sp, #28]
+    11bc:	f9000be1 	str	x1, [sp, #16]
+    11c0:	aa0203fe 	mov	x30, x2
+    11c4:	d50320ff 	xpaclri
+    11c8:	aa1e03e0 	mov	x0, x30
+    11cc:	97fffe41 	bl	ad0 <_mcount@plt>
+    // Default settings for solver
+    int iterations = 10000;
+    11d0:	5284e200 	mov	w0, #0x2710                	// #10000
+    11d4:	b90023e0 	str	w0, [sp, #32]
+    int n = 7;
+    11d8:	528000e0 	mov	w0, #0x7                   	// #7
+    11dc:	b90027e0 	str	w0, [sp, #36]
+    int threads = 1;
+    11e0:	52800020 	mov	w0, #0x1                   	// #1
+    11e4:	b9002be0 	str	w0, [sp, #40]
+    float delta = 1;
+    11e8:	1e2e1000 	fmov	s0, #1.000000000000000000e+00
+    11ec:	bd0043e0 	str	s0, [sp, #64]
+    int x = -1;
+    11f0:	12800000 	mov	w0, #0xffffffff            	// #-1
+    11f4:	b9002fe0 	str	w0, [sp, #44]
+    int y = -1;
+    11f8:	12800000 	mov	w0, #0xffffffff            	// #-1
+    11fc:	b90033e0 	str	w0, [sp, #48]
+    int z = -1;
+    1200:	12800000 	mov	w0, #0xffffffff            	// #-1
+    1204:	b90037e0 	str	w0, [sp, #52]
+    double amplitude = 1.0;
+    1208:	1e6e1000 	fmov	d0, #1.000000000000000000e+00
+    120c:	fd0027e0 	str	d0, [sp, #72]
+
+    int opt;
+
+    // parse the command line arguments
+    while  ( (opt = getopt (argc, argv, "h:n:i:x:y:z:a:t:d:")) != -1)
+    1210:	14000071 	b	13d4 <main+0x228>
+    {
+        switch(opt)
+    1214:	b94047e0 	ldr	w0, [sp, #68]
+    1218:	7101e81f 	cmp	w0, #0x7a
+    121c:	54000980 	b.eq	134c <main+0x1a0>  // b.none
+    1220:	b94047e0 	ldr	w0, [sp, #68]
+    1224:	7101e81f 	cmp	w0, #0x7a
+    1228:	54000c0c 	b.gt	13a8 <main+0x1fc>
+    122c:	b94047e0 	ldr	w0, [sp, #68]
+    1230:	7101e41f 	cmp	w0, #0x79
+    1234:	54000800 	b.eq	1334 <main+0x188>  // b.none
+    1238:	b94047e0 	ldr	w0, [sp, #68]
+    123c:	7101e41f 	cmp	w0, #0x79
+    1240:	54000b4c 	b.gt	13a8 <main+0x1fc>
+    1244:	b94047e0 	ldr	w0, [sp, #68]
+    1248:	7101e01f 	cmp	w0, #0x78
+    124c:	54000680 	b.eq	131c <main+0x170>  // b.none
+    1250:	b94047e0 	ldr	w0, [sp, #68]
+    1254:	7101e01f 	cmp	w0, #0x78
+    1258:	54000a8c 	b.gt	13a8 <main+0x1fc>
+    125c:	b94047e0 	ldr	w0, [sp, #68]
+    1260:	7101d01f 	cmp	w0, #0x74
+    1264:	540008c0 	b.eq	137c <main+0x1d0>  // b.none
+    1268:	b94047e0 	ldr	w0, [sp, #68]
+    126c:	7101d01f 	cmp	w0, #0x74
+    1270:	540009cc 	b.gt	13a8 <main+0x1fc>
+    1274:	b94047e0 	ldr	w0, [sp, #68]
+    1278:	7101b81f 	cmp	w0, #0x6e
+    127c:	54000380 	b.eq	12ec <main+0x140>  // b.none
+    1280:	b94047e0 	ldr	w0, [sp, #68]
+    1284:	7101b81f 	cmp	w0, #0x6e
+    1288:	5400090c 	b.gt	13a8 <main+0x1fc>
+    128c:	b94047e0 	ldr	w0, [sp, #68]
+    1290:	7101a41f 	cmp	w0, #0x69
+    1294:	54000380 	b.eq	1304 <main+0x158>  // b.none
+    1298:	b94047e0 	ldr	w0, [sp, #68]
+    129c:	7101a41f 	cmp	w0, #0x69
+    12a0:	5400084c 	b.gt	13a8 <main+0x1fc>
+    12a4:	b94047e0 	ldr	w0, [sp, #68]
+    12a8:	7101a01f 	cmp	w0, #0x68
+    12ac:	54000160 	b.eq	12d8 <main+0x12c>  // b.none
+    12b0:	b94047e0 	ldr	w0, [sp, #68]
+    12b4:	7101a01f 	cmp	w0, #0x68
+    12b8:	5400078c 	b.gt	13a8 <main+0x1fc>
+    12bc:	b94047e0 	ldr	w0, [sp, #68]
+    12c0:	7101841f 	cmp	w0, #0x61
+    12c4:	54000500 	b.eq	1364 <main+0x1b8>  // b.none
+    12c8:	b94047e0 	ldr	w0, [sp, #68]
+    12cc:	7101901f 	cmp	w0, #0x64
+    12d0:	54000620 	b.eq	1394 <main+0x1e8>  // b.none
+    12d4:	14000035 	b	13a8 <main+0x1fc>
+        {
+        case 'h':
+            printf ("Usage: poisson [-n size] [-x source x-poisition] [-y source y-position] [-z source z-position] [-a source amplitude] [-i iterations] [-t threads] [-d] (for debug mode)\n");
+    12d8:	90000000 	adrp	x0, 1000 <poisson_mixed+0x38c>
+    12dc:	911c2000 	add	x0, x0, #0x708
+    12e0:	97fffde0 	bl	a60 <puts@plt>
+            return EXIT_SUCCESS;
+    12e4:	52800000 	mov	w0, #0x0                   	// #0
+    12e8:	140000d0 	b	1628 <main+0x47c>
+        case 'n':
+            n = atoi(optarg);
+    12ec:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    12f0:	f947e800 	ldr	x0, [x0, #4048]
+    12f4:	f9400000 	ldr	x0, [x0]
+    12f8:	97fffdc2 	bl	a00 <atoi@plt>
+    12fc:	b90027e0 	str	w0, [sp, #36]
+            break;
+    1300:	14000035 	b	13d4 <main+0x228>
+        case 'i':
+            iterations = atoi(optarg);
+    1304:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    1308:	f947e800 	ldr	x0, [x0, #4048]
+    130c:	f9400000 	ldr	x0, [x0]
+    1310:	97fffdbc 	bl	a00 <atoi@plt>
+    1314:	b90023e0 	str	w0, [sp, #32]
+            break;
+    1318:	1400002f 	b	13d4 <main+0x228>
+        case 'x':
+            x = atoi(optarg);
+    131c:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    1320:	f947e800 	ldr	x0, [x0, #4048]
+    1324:	f9400000 	ldr	x0, [x0]
+    1328:	97fffdb6 	bl	a00 <atoi@plt>
+    132c:	b9002fe0 	str	w0, [sp, #44]
+            break;
+    1330:	14000029 	b	13d4 <main+0x228>
+        case 'y':
+            y = atoi(optarg);
+    1334:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    1338:	f947e800 	ldr	x0, [x0, #4048]
+    133c:	f9400000 	ldr	x0, [x0]
+    1340:	97fffdb0 	bl	a00 <atoi@plt>
+    1344:	b90033e0 	str	w0, [sp, #48]
+            break;
+    1348:	14000023 	b	13d4 <main+0x228>
+        case 'z':
+            z = atoi(optarg);
+    134c:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    1350:	f947e800 	ldr	x0, [x0, #4048]
+    1354:	f9400000 	ldr	x0, [x0]
+    1358:	97fffdaa 	bl	a00 <atoi@plt>
+    135c:	b90037e0 	str	w0, [sp, #52]
+            break;
+    1360:	1400001d 	b	13d4 <main+0x228>
+        case 'a':
+            amplitude = atof(optarg);
+    1364:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    1368:	f947e800 	ldr	x0, [x0, #4048]
+    136c:	f9400000 	ldr	x0, [x0]
+    1370:	97fffdac 	bl	a20 <atof@plt>
+    1374:	fd0027e0 	str	d0, [sp, #72]
+            break;
+    1378:	14000017 	b	13d4 <main+0x228>
+        case 't':
+            threads = atoi(optarg);
+    137c:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    1380:	f947e800 	ldr	x0, [x0, #4048]
+    1384:	f9400000 	ldr	x0, [x0]
+    1388:	97fffd9e 	bl	a00 <atoi@plt>
+    138c:	b9002be0 	str	w0, [sp, #40]
+            break;
+    1390:	14000011 	b	13d4 <main+0x228>
+        case 'd':
+            debug = true;
+    1394:	b0000080 	adrp	x0, 12000 <__data_start>
+    1398:	91005400 	add	x0, x0, #0x15
+    139c:	52800021 	mov	w1, #0x1                   	// #1
+    13a0:	39000001 	strb	w1, [x0]
+            break;
+    13a4:	1400000c 	b	13d4 <main+0x228>
+        default:
+            fprintf (stderr, "Usage: poisson [-n size] [-x source x-poisition] [-y source y-position] [-z source z-position] [-a source amplitude]  [-i iterations] [-t threads] [-d] (for debug mode)\n");
+    13a8:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    13ac:	f947e400 	ldr	x0, [x0, #4040]
+    13b0:	f9400000 	ldr	x0, [x0]
+    13b4:	aa0003e3 	mov	x3, x0
+    13b8:	d2801522 	mov	x2, #0xa9                  	// #169
+    13bc:	d2800021 	mov	x1, #0x1                   	// #1
+    13c0:	90000000 	adrp	x0, 1000 <poisson_mixed+0x38c>
+    13c4:	911ec000 	add	x0, x0, #0x7b0
+    13c8:	97fffdae 	bl	a80 <fwrite@plt>
+            exit (EXIT_FAILURE);
+    13cc:	52800020 	mov	w0, #0x1                   	// #1
+    13d0:	97fffd7c 	bl	9c0 <exit@plt>
+    while  ( (opt = getopt (argc, argv, "h:n:i:x:y:z:a:t:d:")) != -1)
+    13d4:	90000000 	adrp	x0, 1000 <poisson_mixed+0x38c>
+    13d8:	91218002 	add	x2, x0, #0x860
+    13dc:	f9400be1 	ldr	x1, [sp, #16]
+    13e0:	b9401fe0 	ldr	w0, [sp, #28]
+    13e4:	97fffd8b 	bl	a10 <getopt@plt>
+    13e8:	b90047e0 	str	w0, [sp, #68]
+    13ec:	b94047e0 	ldr	w0, [sp, #68]
+    13f0:	3100041f 	cmn	w0, #0x1
+    13f4:	54fff101 	b.ne	1214 <main+0x68>  // b.any
+        }
+    }
+
+    // Ensure we have an odd sized cube
+    if (n % 2 == 0)
+    13f8:	b94027e0 	ldr	w0, [sp, #36]
+    13fc:	12000000 	and	w0, w0, #0x1
+    1400:	7100001f 	cmp	w0, #0x0
+    1404:	54000181 	b.ne	1434 <main+0x288>  // b.any
+    {
+        fprintf (stderr, "Error: n should be an odd number!\n");
+    1408:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    140c:	f947e400 	ldr	x0, [x0, #4040]
+    1410:	f9400000 	ldr	x0, [x0]
+    1414:	aa0003e3 	mov	x3, x0
+    1418:	d2800442 	mov	x2, #0x22                  	// #34
+    141c:	d2800021 	mov	x1, #0x1                   	// #1
+    1420:	90000000 	adrp	x0, 1000 <poisson_mixed+0x38c>
+    1424:	9121e000 	add	x0, x0, #0x878
+    1428:	97fffd96 	bl	a80 <fwrite@plt>
+        return EXIT_FAILURE;
+    142c:	52800020 	mov	w0, #0x1                   	// #1
+    1430:	1400007e 	b	1628 <main+0x47c>
+    }
+
+    // Create a source term with a single point in the centre
+    double *source = (double*)calloc (n * n * n, sizeof (double));
+    1434:	b94027e0 	ldr	w0, [sp, #36]
+    1438:	1b007c01 	mul	w1, w0, w0
+    143c:	b94027e0 	ldr	w0, [sp, #36]
+    1440:	1b007c20 	mul	w0, w1, w0
+    1444:	93407c00 	sxtw	x0, w0
+    1448:	d2800101 	mov	x1, #0x8                   	// #8
+    144c:	97fffd79 	bl	a30 <calloc@plt>
+    1450:	f9002be0 	str	x0, [sp, #80]
+    if (source == NULL)
+    1454:	f9402be0 	ldr	x0, [sp, #80]
+    1458:	f100001f 	cmp	x0, #0x0
+    145c:	54000161 	b.ne	1488 <main+0x2dc>  // b.any
+    {
+        fprintf (stderr, "Error: failed to allocated source term (n=%i)\n", n);
+    1460:	90000080 	adrp	x0, 11000 <__FRAME_END__+0xf590>
+    1464:	f947e400 	ldr	x0, [x0, #4040]
+    1468:	f9400003 	ldr	x3, [x0]
+    146c:	b94027e2 	ldr	w2, [sp, #36]
+    1470:	90000000 	adrp	x0, 1000 <poisson_mixed+0x38c>
+    1474:	91228001 	add	x1, x0, #0x8a0
+    1478:	aa0303e0 	mov	x0, x3
+    147c:	97fffd8d 	bl	ab0 <fprintf@plt>
+        return EXIT_FAILURE;
+    1480:	52800020 	mov	w0, #0x1                   	// #1
+    1484:	14000069 	b	1628 <main+0x47c>
+    }
+
+    // Default x,y, z
+    if (x < 0 || x > n-1)
+    1488:	b9402fe0 	ldr	w0, [sp, #44]
+    148c:	7100001f 	cmp	w0, #0x0
+    1490:	540000ab 	b.lt	14a4 <main+0x2f8>  // b.tstop
+    1494:	b94027e1 	ldr	w1, [sp, #36]
+    1498:	b9402fe0 	ldr	w0, [sp, #44]
+    149c:	6b00003f 	cmp	w1, w0
+    14a0:	540000cc 	b.gt	14b8 <main+0x30c>
+        x = n / 2;
+    14a4:	b94027e0 	ldr	w0, [sp, #36]
+    14a8:	531f7c01 	lsr	w1, w0, #31
+    14ac:	0b000020 	add	w0, w1, w0
+    14b0:	13017c00 	asr	w0, w0, #1
+    14b4:	b9002fe0 	str	w0, [sp, #44]
+    if (y < 0 || y > n-1)
+    14b8:	b94033e0 	ldr	w0, [sp, #48]
+    14bc:	7100001f 	cmp	w0, #0x0
+    14c0:	540000ab 	b.lt	14d4 <main+0x328>  // b.tstop
+    14c4:	b94027e1 	ldr	w1, [sp, #36]
+    14c8:	b94033e0 	ldr	w0, [sp, #48]
+    14cc:	6b00003f 	cmp	w1, w0
+    14d0:	540000cc 	b.gt	14e8 <main+0x33c>
+        y = n / 2;
+    14d4:	b94027e0 	ldr	w0, [sp, #36]
+    14d8:	531f7c01 	lsr	w1, w0, #31
+    14dc:	0b000020 	add	w0, w1, w0
+    14e0:	13017c00 	asr	w0, w0, #1
+    14e4:	b90033e0 	str	w0, [sp, #48]
+    if (z < 0 || z > n-1)
+    14e8:	b94037e0 	ldr	w0, [sp, #52]
+    14ec:	7100001f 	cmp	w0, #0x0
+    14f0:	540000ab 	b.lt	1504 <main+0x358>  // b.tstop
+    14f4:	b94027e1 	ldr	w1, [sp, #36]
+    14f8:	b94037e0 	ldr	w0, [sp, #52]
+    14fc:	6b00003f 	cmp	w1, w0
+    1500:	540000cc 	b.gt	1518 <main+0x36c>
+        z = n / 2;
+    1504:	b94027e0 	ldr	w0, [sp, #36]
+    1508:	531f7c01 	lsr	w1, w0, #31
+    150c:	0b000020 	add	w0, w1, w0
+    1510:	13017c00 	asr	w0, w0, #1
+    1514:	b90037e0 	str	w0, [sp, #52]
+
+    source[(z * n + y) * n + x] = amplitude;
+    1518:	b94037e1 	ldr	w1, [sp, #52]
+    151c:	b94027e0 	ldr	w0, [sp, #36]
+    1520:	1b007c21 	mul	w1, w1, w0
+    1524:	b94033e0 	ldr	w0, [sp, #48]
+    1528:	0b000021 	add	w1, w1, w0
+    152c:	b94027e0 	ldr	w0, [sp, #36]
+    1530:	1b007c21 	mul	w1, w1, w0
+    1534:	b9402fe0 	ldr	w0, [sp, #44]
+    1538:	0b000020 	add	w0, w1, w0
+    153c:	93407c00 	sxtw	x0, w0
+    1540:	d37df000 	lsl	x0, x0, #3
+    1544:	f9402be1 	ldr	x1, [sp, #80]
+    1548:	8b000020 	add	x0, x1, x0
+    154c:	fd4027e0 	ldr	d0, [sp, #72]
+    1550:	fd000000 	str	d0, [x0]
+
+    // Calculate the resulting field with mixed boundary conditions
+    double *result = poisson_mixed (n, source, iterations, threads, delta);
+    1554:	bd4043e0 	ldr	s0, [sp, #64]
+    1558:	b9402be3 	ldr	w3, [sp, #40]
+    155c:	b94023e2 	ldr	w2, [sp, #32]
+    1560:	f9402be1 	ldr	x1, [sp, #80]
+    1564:	b94027e0 	ldr	w0, [sp, #36]
+    1568:	97fffdc3 	bl	c74 <poisson_mixed>
+    156c:	f9002fe0 	str	x0, [sp, #88]
+
+    // Print out the middle slice of the cube for validation
+    for (int y = 0; y < n; ++y)
+    1570:	b9003bff 	str	wzr, [sp, #56]
+    1574:	14000024 	b	1604 <main+0x458>
+    {
+        for (int x = 0; x < n; ++x)
+    1578:	b9003fff 	str	wzr, [sp, #60]
+    157c:	14000019 	b	15e0 <main+0x434>
+        {
+            printf ("%0.5f ", result[((n / 2) * n + y) * n + x]);
+    1580:	b94027e0 	ldr	w0, [sp, #36]
+    1584:	531f7c01 	lsr	w1, w0, #31
+    1588:	0b000020 	add	w0, w1, w0
+    158c:	13017c00 	asr	w0, w0, #1
+    1590:	2a0003e1 	mov	w1, w0
+    1594:	b94027e0 	ldr	w0, [sp, #36]
+    1598:	1b007c21 	mul	w1, w1, w0
+    159c:	b9403be0 	ldr	w0, [sp, #56]
+    15a0:	0b000021 	add	w1, w1, w0
+    15a4:	b94027e0 	ldr	w0, [sp, #36]
+    15a8:	1b007c21 	mul	w1, w1, w0
+    15ac:	b9403fe0 	ldr	w0, [sp, #60]
+    15b0:	0b000020 	add	w0, w1, w0
+    15b4:	93407c00 	sxtw	x0, w0
+    15b8:	d37df000 	lsl	x0, x0, #3
+    15bc:	f9402fe1 	ldr	x1, [sp, #88]
+    15c0:	8b000020 	add	x0, x1, x0
+    15c4:	fd400000 	ldr	d0, [x0]
+    15c8:	90000000 	adrp	x0, 1000 <poisson_mixed+0x38c>
+    15cc:	91234000 	add	x0, x0, #0x8d0
+    15d0:	97fffd30 	bl	a90 <printf@plt>
+        for (int x = 0; x < n; ++x)
+    15d4:	b9403fe0 	ldr	w0, [sp, #60]
+    15d8:	11000400 	add	w0, w0, #0x1
+    15dc:	b9003fe0 	str	w0, [sp, #60]
+    15e0:	b9403fe1 	ldr	w1, [sp, #60]
+    15e4:	b94027e0 	ldr	w0, [sp, #36]
+    15e8:	6b00003f 	cmp	w1, w0
+    15ec:	54fffcab 	b.lt	1580 <main+0x3d4>  // b.tstop
+        }
+        printf ("\n");
+    15f0:	52800140 	mov	w0, #0xa                   	// #10
+    15f4:	97fffd2b 	bl	aa0 <putchar@plt>
+    for (int y = 0; y < n; ++y)
+    15f8:	b9403be0 	ldr	w0, [sp, #56]
+    15fc:	11000400 	add	w0, w0, #0x1
+    1600:	b9003be0 	str	w0, [sp, #56]
+    1604:	b9403be1 	ldr	w1, [sp, #56]
+    1608:	b94027e0 	ldr	w0, [sp, #36]
+    160c:	6b00003f 	cmp	w1, w0
+    1610:	54fffb4b 	b.lt	1578 <main+0x3cc>  // b.tstop
+    }
+
+    free (source);
+    1614:	f9402be0 	ldr	x0, [sp, #80]
+    1618:	97fffd16 	bl	a70 <free@plt>
+    free (result);
+    161c:	f9402fe0 	ldr	x0, [sp, #88]
+    1620:	97fffd14 	bl	a70 <free@plt>
+
+    return EXIT_SUCCESS;
+    1624:	52800000 	mov	w0, #0x0                   	// #0
+}
+    1628:	a8c67bfd 	ldp	x29, x30, [sp], #96
+    162c:	d65f03c0 	ret
+
+0000000000001630 <atexit>:
+    1630:	b0000082 	adrp	x2, 12000 <__data_start>
+    1634:	d2800001 	mov	x1, #0x0                   	// #0
+    1638:	f9400442 	ldr	x2, [x2, #8]
+    163c:	17fffced 	b	9f0 <__cxa_atexit@plt>
+
+0000000000001640 <__stack_chk_fail_local>:
+    1640:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+    1644:	910003fd 	mov	x29, sp
+    1648:	97fffcfe 	bl	a40 <__stack_chk_fail@plt>
+
+Disassembly of section .fini:
+
+000000000000164c <_fini>:
+    164c:	d503201f 	nop
+    1650:	a9bf7bfd 	stp	x29, x30, [sp, #-16]!
+    1654:	910003fd 	mov	x29, sp
+    1658:	a8c17bfd 	ldp	x29, x30, [sp], #16
+    165c:	d65f03c0 	ret
